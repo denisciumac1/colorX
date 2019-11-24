@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+  
+    <h1>2333333333</h1>
+
+
+ <script>
+     async function loadImage(image_name){
+           const response_1 = await fetch(`/data/${image_name}.json`);
+           const myJson = await response_1.json();
+           console.log(JSON.stringify(myJson));
+
+           const response_2 = await fetch(`/images/${image_name}`);
+           console.log(response_2);
+       } 
+
+       loadImage(`102-300x300.jpg`)
+
+     //  cu ajutorul foreach si a unui callback in functia data ---> div 
+       //   dom creat element
+ </script>
+</body>
+
+</html>
